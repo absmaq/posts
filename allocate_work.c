@@ -51,7 +51,9 @@ int getMinTime(int * task, int num_workers, int size)
 
 int main()
 {
+  /* Array with the time to complete the tasks */
   int task[] = {2, 2, 3, 7, 1, 6, 3, 1, 1, 7, 4};
+  /* nWorkers = number or workers */
   int nWorkers = 2, size = sizeof(task)/sizeof(int);
 
   qsort(task, size, sizeof(int), cmpFunction); /* Sorting the array before proceed */
